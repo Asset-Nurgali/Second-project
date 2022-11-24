@@ -6,26 +6,38 @@
     <meta name="viewport" content="width=h1, initial-scale=1.0">
     <meta name="keyWords" content="CV, Asset, Nurgali">
     <meta name="description" content="Это сайт резюме Нургалиева Асета">
+    <link rel="stylesheet" href="stylesCV.css">
     <title>CV Asset</title>
 </head>
 <body>
-    <img src="it.png" width="300" alt="logo it">
-    <h1>Нургалиев Асет</h1>
-    <p>Я хочу изучить программирование.</p>
-    <p>Я люблю спорт, путешествовать и ездить на машине.</p>
-    <br>
-    <h4>Список социальных сетей</h4>
-    <a href="https://www.instagram.com/assetnurgali/" target="_blank">Instagram</a> |
-    <a href="https://t.me/AssetNurgali" target="_blank">Telegram</a>
+  <div class="container">
+  <div class="info">
+    <img src="it.png" alt="logo it" class="avatar">
+    <div class="info-text">
+      <h1>Нургалиев Асет</h1>
+      <p>Я хочу изучить программирование.</p>
+      <p>Я люблю спорт, путешествовать и ездить на машине.</p>
+      <br>
+
+      <h4>Список социальных сетей</h4>
+      <a href="https://www.instagram.com/assetnurgali/" target="_blank" class="link">Instagram</a> |
+      <a href="https://t.me/AssetNurgali" target="_blank" class="link">Telegram</a>
+    </div>
+  </div>
+
+  
+  <div class="card bg-yellow">
     <h2>Мои хобби</h2>
-    <ul>
+    <ul class="list">
         <li>Футбол</li>
         <li>Езда на машине</li>
         <li>Путешествие</li>
         <li>Езда на лошадях</li>
     </ul>
+  </div>  
+  <div class="card bg-red">
     <h2>Опыт работы</h2>
-    <table>
+    <table class="table">
         <tr>
             <td>ТОО "Карамат"</td>
             <td>Менеджер</td>
@@ -42,23 +54,28 @@
             <td>2012 - 2022</td>
         </tr>
     </table>
-    <h2>Связаться со мной</h2>
-    <form>
-      <div>
+  </div>
+
+    
+    <form class="form">
+      <h2>Связаться со мной</h2>
+      <div class="form-row">
+      <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="text" id="name" placeholder="Введите имя">
       </div>
-      <div>
+      <div class="form-group">
         <label for="email">Ваш email:</label>
         <input type="email" id="email" placeholder="Введите email">
       </div>
-      <div>
+    </div>
+      <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea name="message" id="" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+        <textarea  name="message" id=message"" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
       </div>
-      <button type="submit">Отправить!</button>
+      <button type="submit" class="btn">Отправить!</button>
     </form>
+  </div>
     
 </body>
 </html>
